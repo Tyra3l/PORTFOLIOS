@@ -1,0 +1,9 @@
+<%= simple_form_for @contact, html: { data: { controller: 'recaptcha' } } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :title %>
+  <%= f.input :message, as: :text %>
+  <%= f.input :recaptcha, as: :hidden %>
+  <%= recaptcha_tags %>
+  <%= f.button :submit, 'Envoyer', class: 'round-button'%>
+<% end %>

@@ -1,12 +1,89 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-lewagon .navbar-collapse {
+  font-size: 1.75em;
+  margin-right: 30px;
   flex-grow: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-lewagon .navbar-brand {
+  font-size: 2.5em;
+  padding: 0;
+  margin-left: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-lewagon .navbar-brand:hover {
+  color: grey;
+}
+
+.navbar-lewagon .navbar-brand span {
+  color: grey;
+}
+
+.navbar-lewagon .navbar-nav .nav-item {
+  margin-right: 75px; /* Ajoutez la marge entre les éléments */
+}
+// Media query pour les écrans de largeur inférieure à 1200px
+@media screen and (max-width: 1400px) {
+
+  .navbar-lewagon .navbar-collapse {
+    font-size: 1em;
+    margin-right: 30px;
+    flex-grow: 0;
+  }
+
+  .navbar-lewagon .navbar-brand {
+    font-size: 1.5em;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .navbar-lewagon .navbar-brand:hover {
+    color: grey;
+  }
+
+  .navbar-lewagon .navbar-brand span {
+    color: grey;
+  }
+
+  .navbar-lewagon .navbar-nav .nav-item {
+    margin-right: 75px; /* Ajoutez la marge entre les éléments */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .navbar-lewagon .navbar-collapse {
+    font-size: 1em;
+    margin-right: 30px;
+    flex-grow: 0;
+  }
+
+  .navbar-lewagon .navbar-brand {
+    font-size: 1.5em;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .navbar-lewagon .navbar-brand:hover {
+    color: grey;
+  }
+
+  .navbar-lewagon .navbar-brand span {
+    color: grey;
+  }
+
+  .navbar-lewagon .navbar-nav .nav-item {
+    margin-right: 75px; /* Ajoutez la marge entre les éléments */
+  }
 }

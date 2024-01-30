@@ -1,0 +1,32 @@
+<section class="secteurs" id="expériences">
+  <h1 class="title"> CAREER OBJECTIVES </h1>
+  <p>Seeking a rewarding opportunity! Leveraging my ability to provide innovative solutions, learn quickly, and my unwavering commitment, I aspire to play a key role in the growth and leadership of a team. My desire for professional advancement is balanced by my commitment to preserving time for my two young children.</p>
+</section>
+<section class="secteurs" id="expériences" data-controller="industry">
+    <h1 class="title"> INDUSTRY REFERENCES </h1>
+      <p class="small_title">My previous professional experiences have provided me with in-depth expertise in these four industries.</p>
+      <div class="list_secteurs">
+        <div class="sect">
+          <%= image_tag "pexels-nicolas-postiglioni-947174.jpg" %>
+          <h4>Retail</h4>
+          <p>2016-2023</p>
+        </div>
+        <div class="sect">
+          <%= image_tag "pexels-oleksandr-pidvalnyi-12932434.jpg" %>
+          <h4>Events</h4>
+          <p>2013-2016</p>
+        </div>
+        <div class="sect">
+          <%= image_tag "pexels-hernán-santarelli-5919577.jpg" %>
+          <h4>Sommelier</h4>
+          <p>2010-2013</p>
+        </div>
+        <div class="sect">
+          <%= image_tag "pexels-elle-hughes-2696064.jpg" %>
+          <h4>Catering</h4>
+          <p>2007-2013</p>
+        </div>
+      </div>
+      <button data-action="click->industry#prevSlide" class="d-none">Previous</button>
+      <button data-action="click->industry#nextSlide" class="d-none">Next</button>
+  </section>

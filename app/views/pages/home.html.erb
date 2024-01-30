@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="accueil">
+    <div class="photos">
+      <%= image_tag("pexels-lukas-574069.jpg", alt: "Photo 1", class: "photo-left") %>
+      <%= image_tag("run-4961494_1280.jpg", alt: "Photo 2", class: "photo-right") %>
+      <%= image_tag("checkmate-1511866_1280.jpg", alt: "Photo 3", class: "photo-center") %>
+    </div>
+      <div class="content">
+        <h1>GUILLAUME INGRIN</h1>
+        <h2>FULL STACK WEB DEVELOPER<br>LILLE</h2>
+        <%= link_to "GO TO PORTFOLIO", "/portfolio", class: "btn rounded-5" %>
+      </div>
+</div>

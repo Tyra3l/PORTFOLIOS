@@ -1,0 +1,60 @@
+.list_skills {
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+.list_skills  h1 {
+  font-size: 110px;
+  color: rgb(76, 78, 80);
+}
+.list_skills .description {
+  margin-left: 20px;
+}
+.list_skills .description h3 {
+  color: #000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.list_skills .logos {
+  display: flex;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.list_skills .logos img {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+p {
+font-size: 25px;
+padding: 5px;
+}
+#download-cv {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+#download-cv a {
+  display: inline-block;
+  font-size: 25px;
+  padding: 85px 50px;
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#download-cv a:hover {
+  background-color: #000;
+  color: #fff;
+}

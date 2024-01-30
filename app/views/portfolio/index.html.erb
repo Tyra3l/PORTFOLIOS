@@ -1,0 +1,91 @@
+<div class="container" data-controller="download-cv">
+  <section>
+    <h1 class="title">My CV</h1>
+    <div class="CV">
+      <%= image_tag "GuillaumeIngrinCVGIF.gif" %>
+    </div>
+    <div id="download-cv" data-target="download-cv.button">
+      <a href="/downloads/GuillaumeIngrinCV.pdf" download="GuillaumeIngrinCV.pdf" class="btn CV_button">Télécharger<br> CV</a>
+    </div>
+  </section>
+  <section class="secteurs" id="expériences">
+    <div class="list_secteurs" data-controller="achievements">
+      <div class="sect" data-description-target="funfinder-description" data-action="click->achievements#showDescription">
+        <%= image_tag "Funfinder.jpg" %>
+        <h4>phone app</h4>
+        <p>2023</p>
+      </div>
+      <div class="sect" data-description-target="loconsole-description" data-action="click->achievements#showDescription">
+        <%= image_tag "Loconsole.png" %>
+        <h4>website</h4>
+        <p>2023</p>
+      </div>
+    </div>
+    <div class="descriptions">
+      <div id="funfinder-description" class="description d-none">
+        <p>Funfinder is a phone application which helps you find activities around you</p>
+      </div>
+      <div id="loconsole-description" class="description d-none">
+        <p>Loconsole is a website to rent or lease a Video game console around you</p>
+      </div>
+    </div>
+  </section>
+    <!-- skills -->
+
+    <section class="skills" id="compétences">
+        <h1 class="title">My Skills</h1>
+        <div class="list_skills">
+          <h1>1</h1>
+          <div class="description">
+            <h3>Web Development</h3>
+            <div class="logos">
+              <%= image_tag "SQL.png" %>
+              <%= image_tag "PHP.png" %>
+              <%= image_tag "CSS.png" %>
+              <%= image_tag "HTML.png" %> <!-- Utilisez une extension standardisée -->
+              <%= image_tag "Stimulus-in-Rails.png" %> <!-- Utilisez une extension standardisée -->
+              <%= image_tag "Js.png" %> <!-- Utilisez une extension standardisée -->
+              <%= image_tag "Ruby.png" %> <!-- Utilisez une extension standardisée -->
+              <%= image_tag "Rails.png" %> <!-- Utilisez une extension standardisée -->
+            </div>
+          </div>
+        </div>
+        <div class="list_skills">
+            <h1>2</h1>
+            <div class="description">
+                <h3>Other IT</h3>
+                <div class="logos">
+                  <%= image_tag "Apple.png" %>
+                  <%= image_tag "Windows.png" %>
+                  <%= image_tag "Ps.png" %>
+                  <%= image_tag "Prestashop.png" %>
+                  <%= image_tag "Joomla.png" %> <!-- Utilisez une extension standardisée -->
+                  <%= image_tag "Office.png" %> <!-- Utilisez une extension standardisée -->
+                </div>
+            </div>
+        </div>
+        <div class="list_skills">
+            <h1>3</h1>
+            <div class="description">
+                <h3>Implementation of Standards and Procedures</h3>
+                <div class="logos">
+                  <%= image_tag "HACCP.png" %>
+                  <%= image_tag "HVE.png" %>
+                  <%= image_tag "Ecocert.png" %>
+                  <%= image_tag "Iso.png" %>
+                </div>
+            </div>
+        </div>
+        <div class="list_skills">
+            <h1>4</h1>
+            <div class="description">
+              <h3>Linguistic</h3>
+              <div class="logos">
+                <%= image_tag "France.png" %><p>Level C2</p>
+                <%= image_tag "English.png" %><p>Level B2</p>
+                <%= image_tag "Allemand.png" %><p>Level A2</p>
+              </div>
+            </div>
+        </div>
+    </section>
+</div>
