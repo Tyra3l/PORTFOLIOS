@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = ["description"];
 
   connect() {
-    // Initial state setup, if needed
+
   }
 
   fire(event) {

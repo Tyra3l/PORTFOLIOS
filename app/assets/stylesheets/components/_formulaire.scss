@@ -2,9 +2,9 @@ body {
   font-size: 25px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garantit que le corps occupe au moins 100% de la hauteur de la fenêtre */
+  min-height: 100vh;
 }
 
 .container {
-  flex: 1; /* Le conteneur doit occuper l'espace disponible restant dans le corps */
+  flex: 1;
 }
