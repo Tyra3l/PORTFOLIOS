@@ -5,7 +5,7 @@ require 'dotenv/load' if Rails.env.development? || Rails.env.test? || Rails.env.
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
+Dotenv::Railtie.load
 module Portfolios
   class Application < Rails::Application
     config.generators do |generate|
