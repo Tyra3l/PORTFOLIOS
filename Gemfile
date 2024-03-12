@@ -50,6 +50,7 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails"
 gem 'mail_form'
+gem 'rake', require: false
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
