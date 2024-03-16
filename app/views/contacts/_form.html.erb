@@ -1,9 +1,34 @@
 <%= simple_form_for @contact, html: { data: { controller: 'recaptcha' } } do |f| %>
-  <%= f.input :name %>
-  <%= f.input :email %>
-  <%= f.input :title %>
-  <%= f.input :message, as: :text %>
-  <%= f.input :recaptcha, as: :hidden %>
-  <%= recaptcha_tags %>
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :name, 'Nom' %>
+    </div>
+    <div class="col-md-9">
+      <%= f.input :name, class: 'form-control', placeholder: 'Nom' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :email, 'Email' %>
+    </div>
+    <div class="col-md-9">
+      <%= f.input :email, class: 'form-control', placeholder: 'Email' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :title, 'Titre' %>
+    </div>
+    <div class="col-md-9">
+      <%= f.input :title, class: 'form-control', placeholder: 'Titre' %>
+    </div>
+  </div>
+  <div class="mb-3">
+    <%= f.input :message, as: :text %>
+  </div>
+  <div class="mb-3">
+    <%= f.input :recaptcha, as: :hidden %>
+    <%= recaptcha_tags %>
+  </div>
   <%= f.button :submit, 'Envoyer', class: 'round-button'%>
 <% end %>
